@@ -1,0 +1,404 @@
+/*
+ * ArcEmu MMORPG Server
+ * Copyright (C) 2008 <http://www.ArcEmu.org/>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
+
+#include "Common.h"
+#include "Config/ConfigEnv.h"
+#include "Log.h"
+#include "NGLog.h"
+#include <stdarg.h>
+
+string FormatOutputString(const char * Prefix, const char * Description, bool useTimeStamp)
+{
+
+	char p[MAX_PATH];
+	p[0] = 0;
+	time_t t = time(NULL);
+	tm * a = gmtime(&t);
+	strcat(p, Prefix);
+	strcat(p, "/");
+	strcat(p, Description);
+	if(useTimeStamp)
+	{
+		char ftime[100];
+		snprintf(ftime, 100, "-%-4d-%02d-%02d %02d-%02d-%02d", a->tm_year+1900, a->tm_mon+1, a->tm_mday, a->tm_hour, a->tm_min, a->tm_sec);
+		strcat(p, ftime);
+	}
+
+	strcat(p, ".log");
+	return string(p);
+}
+
+createFileSingleton( oLog );
+createFileSingleton(CLog);
+initialiseSingleton( WorldLog );
+
+SERVER_DECL time_t UNIXTIME;
+SERVER_DECL tm g_localTime;
+#if (!defined( WIN32 ) && !defined( WIN64 ) )
+static const char* colorstrings[TBLUE+1] = {
+"",
+"\033[22;31m",
+"\033[22;32m",
+"\033[01;33m",
+//"\033[22;37m",
+"\033[0m",
+"\033[01;37m",
+"\033[22;34m",
+};
+#endif
+
+void oLog::outTime()
+{
+#if (!defined( WIN32 ) && !defined( WIN64 ) )
+	char buf[256];
+	time_t t = time(NULL);
+	struct tm *tm = localtime(&t);
+
+	if (tm)
+	{
+		strftime(buf, 256, "[%Y-%m-%d %T] ", tm);
+		fprintf(m_file, buf);
+	}
+#endif
+}
+
+void oLog::outString( const char * str, ... )
+{
+	if(m_fileLogLevel < 0 && m_screenLogLevel < 0)
+		return;
+
+	va_list ap;
+	va_start(ap, str);
+	
+	if(m_screenLogLevel >= 0)
+	{
+		vprintf(str, ap);
+		putc('\n', stdout);
+	}
+	if(m_fileLogLevel >= 0 && m_file)
+	{
+		outTime();
+		vfprintf(m_file, str, ap);
+		putc('\n', m_file);
+	}
+
+	va_end(ap);
+}
+
+void oLog::outError( const char * err, ... )
+{
+	if(m_fileLogLevel < 1 && m_screenLogLevel < 1)
+		return;
+
+	va_list ap;
+	va_start(ap, err);
+
+	if(m_screenLogLevel >= 1)
+	{
+#if (defined( WIN32 ) || defined( WIN64 ) )
+		if( stderr_handle )
+			SetConsoleTextAttribute(stderr_handle, FOREGROUND_RED | FOREGROUND_INTENSITY);
+#else
+		puts(colorstrings[TRED]);
+#endif
+		vfprintf(stderr, err, ap);
+		putc('\n', stderr);
+#if (defined( WIN32 ) || defined( WIN64 ) )
+		if( stderr_handle )
+			SetConsoleTextAttribute(stderr_handle, FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN);
+#else
+		puts(colorstrings[TNORMAL]);
+#endif
+	}
+	if(m_fileLogLevel >= 1 && m_file)
+	{
+		outTime();
+		vfprintf(m_file, err, ap);
+		putc('\n', m_file);
+	}
+
+	va_end(ap);
+}
+
+void oLog::outBasic( const char * str, ... )
+{
+	if(m_fileLogLevel < 1 && m_screenLogLevel < 1)
+		return;
+
+	va_list ap;
+	va_start(ap, str);
+
+	if(m_screenLogLevel >= 1)
+	{
+		vprintf(str, ap);
+		putc('\n', stdout);
+	}
+	if(m_fileLogLevel >= 1 && m_file)
+	{
+		vfprintf(m_file, str, ap);
+		putc('\n', m_file);
+	}
+
+	va_end(ap);
+}
+
+void oLog::outDetail( const char * str, ... )
+{
+	if(m_fileLogLevel < 2 && m_screenLogLevel < 2)
+		return;
+
+	va_list ap;
+	va_start(ap, str);
+
+	if(m_screenLogLevel >= 2)
+	{
+		vprintf(str, ap);
+		putc('\n', stdout);
+	}
+	if(m_fileLogLevel >= 2 && m_file)
+	{
+		outTime();
+		vfprintf(m_file, str, ap);
+		putc('\n', m_file);
+	}
+
+	va_end(ap);
+}
+
+void oLog::outDebug( const char * str, ... )
+{
+	if(m_fileLogLevel < 3 && m_screenLogLevel < 3)
+		return;
+
+	va_list ap;
+	va_start(ap, str);
+
+	if(m_screenLogLevel >= 3)
+	{
+		vprintf(str, ap);
+		putc('\n', stdout);
+	}
+	if(m_fileLogLevel >= 3 && m_file)
+	{
+		outTime();
+		vfprintf(m_file, str, ap);
+		putc('\n', m_file);
+	}
+
+	va_end(ap);
+}
+
+void oLog::outMenu( const char * str, ... )
+{
+	va_list ap;
+	va_start(ap, str);
+	vprintf( str, ap );
+	va_end(ap);
+	fflush(stdout);
+}
+
+void oLog::Init(int32 fileLogLevel, int32 screenLogLevel)
+{
+	m_screenLogLevel = screenLogLevel;
+	m_fileLogLevel = fileLogLevel;
+
+	// get error handle
+#if (defined( WIN32 ) || defined( WIN64 ) )
+	stderr_handle = GetStdHandle(STD_ERROR_HANDLE);
+	stdout_handle = GetStdHandle(STD_OUTPUT_HANDLE);
+#endif
+}
+
+void oLog::SetScreenLoggingLevel(int32 level)
+{
+	m_screenLogLevel = level;
+}
+
+void oLog::SetFileLoggingLevel(int32 level)
+{
+	m_fileLogLevel = level;
+
+	if (m_fileLogLevel >= 0)
+	{
+		char *filename = "file.log";
+		m_file = fopen(filename, "w");
+		if (m_file == NULL)
+			fprintf(stderr, "%s: Error opening '%s': %s\n", __FUNCTION__, filename, strerror(errno));
+	}
+}
+oLog::~oLog()
+{
+	if( m_file )
+	{
+		fclose( m_file );
+		m_file = NULL;
+	}
+}
+
+void SessionLogWriter::write(const char* format, ...)
+{
+	if(!m_file)
+		return;
+
+	va_list ap;
+	va_start(ap, format);
+	char out[32768];
+
+	time_t t = time(NULL);
+	tm* aTm = localtime(&t);
+	sprintf(out, "[%-4d-%02d-%02d %02d:%02d:%02d] ",aTm->tm_year+1900,aTm->tm_mon+1,aTm->tm_mday,aTm->tm_hour,aTm->tm_min,aTm->tm_sec);
+	size_t l = strlen(out);
+	vsnprintf(&out[l], 32768 - l, format, ap);
+
+	fprintf(m_file, "%s\n", out);
+	va_end(ap);
+	if( FlushLineInterval != 0 )
+	{
+		FlushCounter++;
+		if( ( FlushCounter % FlushLineInterval ) == 0 )
+			fflush( m_file );
+	}
+}
+
+WorldLog::WorldLog()
+{
+	bEnabled = false;
+	m_file=NULL;
+
+	if (Config.MainConfig.GetBoolDefault("LogLevel", "World", false))
+	{
+		Log.Notice("WorldLog", "Enabling packetlog output to \"world.log\"");
+		Enable();
+	} else {
+		Disable();
+	}
+}
+
+void WorldLog::Enable()
+{
+	if(bEnabled)
+		return;
+
+	bEnabled = true;
+	if(m_file != NULL)
+	{
+		Disable();
+		bEnabled=true;
+	}
+	m_file = fopen("world.log", "w");
+}
+
+void WorldLog::Disable()
+{
+	if(!bEnabled)
+		return;
+
+	bEnabled = false;
+	if(!m_file)
+		return;
+
+	fflush(m_file);
+	fclose(m_file);
+	m_file=NULL;
+}
+
+WorldLog::~WorldLog()
+{
+	if( m_file )
+	{
+		fclose( m_file );
+		m_file = NULL;
+	}
+}
+
+void oLog::outColor(uint32 colorcode, const char * str, ...)
+{
+	if( !str ) return;
+	va_list ap;
+	va_start(ap, str);
+#if (defined( WIN32 ) || defined( WIN64 ) )
+	if( stderr_handle )
+		SetConsoleTextAttribute(stdout_handle, colorcode);
+#else
+	printf(colorstrings[colorcode]);
+#endif
+	vprintf( str, ap );
+	fflush(stdout);
+	va_end(ap);
+}
+
+void SessionLogWriter::Open()
+{
+	m_file = fopen(m_filename, "a");
+}
+
+void SessionLogWriter::Close()
+{
+	if(!m_file) return;
+	fflush(m_file);
+	fclose(m_file);
+	m_file=NULL;
+}
+
+SessionLogWriter::SessionLogWriter(const char * filename, bool open)
+{
+	m_filename = strdup(filename);
+	m_file=NULL;
+	if(open)
+		Open();
+	FlushLineInterval = FlushCounter = 0;
+}
+
+SessionLogWriter::~SessionLogWriter()
+{
+	if(m_file)
+	{
+		Close();
+		m_file = NULL;
+	}
+
+	free(m_filename);
+}
+
+#ifdef DEBUG_SPELL_CASTS
+	uint8		casted_spells[MAX_USABLE_SPELL_ID];
+	uint32		next_dump;
+	uint32		filename_index;
+	uint32		last_N_spells[LOG_LAST_N_SPELLS];
+	uint32		last_N_spells_index;
+	FILE			*last_N_spells_FILE;
+	void DumpToFileUniqueSpells( bool forced )
+	{
+		if( forced || next_dump < GetTickCount() )
+		{
+			char fname[100];
+			sprintf(fname,"unique_spells_%u.txt",filename_index);
+			FILE *outf = fopen(fname,"w");
+			if( outf )
+			{
+				for(int i=0;i<MAX_USABLE_SPELL_ID;i++)
+					if( casted_spells[ i ] )
+						fprintf( outf, "%u\n",i);
+				fclose(outf);
+				outf = NULL;
+			}
+			next_dump = GetTickCount() + 2*60*1000; //dump content every 2 minutes ?
+		}
+	}
+#endif

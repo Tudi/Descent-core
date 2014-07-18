@@ -1,0 +1,3 @@
+Got this build from some repack i can not remember. No idea how new / old it is. Just took the first one from ac-web that was posted in 2014.
+By default trinity logonserver does NOT support 14333 client build. I loaded authserver.exe into a hex editor, searched for a whatever supported build number ( 8606, 9947, ... 15595 ) and replaced it to 14333.
+In your realmlist database table, make sure you set realm flag to 0 ( 2 is offline ) because arcemu will not update realmlist state. You will see the realm online even if it is offline. Will need to implement this later

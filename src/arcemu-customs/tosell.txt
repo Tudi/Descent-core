@@ -1,0 +1,207 @@
+WARRIOR
+EQUIPMENT_SLOT_BODY = 3
+89,7848,0 = tunic of star iron lvl 1 -> |cffff00ffequip : 10% Received damage is converted into rage. Conversion deteriorates item quickly.
+138,9346,0 = tunic of star iron lvl 2 -> |cffff00ffequip : 20% Received damage is converted into rage. Conversion deteriorates item.
+2248,1184,3 = tunic of star iron lvl 3 -> |cffff00ffequip : 30% Received damage is converted into rage and 30% into health. Conversion deteriorates item slowly.  
+17,7016,3 = tunic of star iron lvl 4 -> |cffff00ffequip : 50% Received damage is converted into rage, 30% into health, 10% into attack power(stacks to 10 times). Conversion deteriorates item very slowly.  
+
+rogues
+EQUIPMENT_SLOT_BODY = 3
+93,369 = chestcrest of rapid killing lvl 1 -> |cffff00ffequip : You have a chance to get 1 extra attack. Forced attacks deteriorate item quikcly.
+6142,10126 = chestcrest of rapid killing lvl 2 -> |cffff00ffequip : You have a higher chance to get 1 extra attack. Damage is increased by 20%. Forced attacks deteriorate item.
+133,7912 = chestcrest of rapid killing lvl 3 -> |cffff00ffequip : You have a higher chance to get 2 extra attack. Damage is increased by 30%. Forced attacks deteriorate item slowly.
+5090,7908 = chestcrest of rapid killing lvl 4 -> |cffff00ffequip : You have a higher chance to get 3 extra attack. Damage is increased by 40%. You get all energy back. Forced attacks deteriorate item very slowly.
+
+SHAMAN
+EQUIPMENT_SLOT_BODY = 3
+101,373 = shirt of thunders lvl 1 -> |cffff00ffequip : 40% chance to cast chain lightning on struck based on level. Magical power drains item durability quickly.
+105,371 = shirt of thunders lvl 2 -> |cffff00ffequip : 20% chance to cast chain lightning on struck based on level Add 1 extra attack. Magical power drains item durability.
+123,383 = shirt of thunders lvl 3 -> |cffff00ffequip : 30% chance to cast chain lightning on struck based on level Add 1 extra attack. Increase attack speed by 40%. Magical power drains item durability slowly.
+134,387 = shirt of thunders lvl 4 -> |cffff00ffequip : 60% chance to cast chain lightning on struck based on level Add 2 extra attack. Increase attack speed by 60%. Magical power drains item durability very slowly.
+
+PALADIN
+EQUIPMENT_SLOT_TRINKET1	  12
+EQUIPMENT_SLOT_TRINKET2	  13
+18438,23521 = libram of protection lvl 1 -> |cffff00ffequip : Chance to increase resistances by 50 + 10% for 30 sec on any dmg. Charges depleet quickly.
+12751,23177 = libram of protection lvl 2 -> |cffff00ffequip : Moderate chance to increase resistances by 100 + 20% for 30 sec on any dmg. Charges depleet slowly.
+28648,23175 = libram of protection lvl 3 -> |cffff00ffequip : Moderate chance to increase resistances by 200 + 30% for 30 sec on any dmg. Increased charges. Charges depleet slowly.
+12750,23175 = libram of protection lvl 4 -> |cffff00ffequip : High chance to increase resistances by 300 + 40% for 30 sec on any dmg and damage by 50%. Increased charges. Charges depleet slowly.
+
+WARLOCK
+EQUIPMENT_SLOT_TRINKET1	  12
+EQUIPMENT_SLOT_TRINKET2	  13
+5222,6001 = rune of dragon dust lvl 1 -> |cffff00ffequip : Most spell durations increased by 20%.
+5226,6001 = rune of dragon dust lvl 2 -> |cffff00ffequip : Most spell durations increased by 30% and effects by 20%.
+4033,6496 = rune of dragon dust lvl 3 -> |cffff00ffequip : Most spell durations increased by 40% and effects by 30%. Pet stamina by 200%. Equip after summon.
+3002,6338 = rune of dragon dust lvl 4 -> |cffff00ffequip : Most spell durations increased by 50% and effects by 40%. Pet stamina by 400%. Equip after summon.
+
+DRUID
+EQUIPMENT_SLOT_TRINKET1	  12
+EQUIPMENT_SLOT_TRINKET2	  13
+1350,6358 = talon of nature lvl 1 -> |cffff00ffequip : Increase Move speed by 50%.
+1544,6498 = talon of nature lvl 2 -> |cffff00ffequip : Increase Move speed by 40%. Increase attack speed by 50%.
+1403,6499 = talon of nature lvl 3 -> |cffff00ffequip : Increase Move speed by 40%. Increase attack speed by 60%.Increase stamina by 70%.
+1622,6501 = talon of nature lvl 4 -> |cffff00ffequip : Increase attack speed by 70%. Increase stamina by 200%. Increase intelect by 100%.
+
+HUNTER
+EQUIPMENT_SLOT_FINGER1	   10
+EQUIPMENT_SLOT_FINGER2	   11
+996,3453 = ring of ancient bones lvl 1 -> |cffff00ffequip : Regenerate ammo slowly, add 20% damage. Cosumes 1 coin per effect.
+5828,6012 = ring of ancient bones lvl 2 -> |cffff00ffequip : Regenerate ammo, add 30% damage. Cosumes 10 coin per effect.
+6673,9832 = ring of ancient bones lvl 3 -> |cffff00ffequip : Regenerate ammo, add 50% damage, heal pet over time. Cosumes 20 coin per effect.
+6698,9834 = ring of ancient bones lvl 4 -> |cffff00ffequip : Regenerate ammo, add 50% damage, heal pet over time, Regenerate mana over time. Cosumes 30 coin per effect.
+
+PRIEST
+EQUIPMENT_SLOT_NECK		  1
+2588,13253 = neclace of life bound lvl 1 -> |cffff00ffequip : Extra 5% total mana regeneration.
+5378,14964 = neclace of life bound lvl 2 -> |cffff00ffequip : Extra 6% total mana regeneration. 20% Chance to get a free power word shield based on your level on dmg. Charges consume coins.
+16141,30091 = neclace of life bound lvl 3 -> |cffff00ffequip : Extra 7% total mana regeneration. 30% Chance to get a free power word shield based on your level on dmg. Most cooldowns decreased. Charges consume coins.
+16159,30091 = neclace of life bound lvl 4 -> |cffff00ffequip : Extra 8% total mana regeneration. 40% Chance to get a free power word shield based on your level on dmg. Most cooldowns decreased. 40% chance on cast to get your spells cooldowns cleared when casting. Charges consume coins.
+
+MAGE
+EQUIPMENT_SLOT_BACK		  14
+876,1680,4 = cape of elemental powers lvl 1 -> |cffff00ffequip : Most spell effects increased by 10%.
+1957,1684,4 = cape of elemental powers lvl 2 -> |cffff00ffequip : Most spell effects increased by 20%.Most spell cooldowns decreased by 10%.
+1961,1685,4 = cape of elemental powers lvl 3 -> |cffff00ffequip : Most spell effects increased by 30%.Most spell cooldowns decreased by 20%.Spell castime reduced by 10%.
+1984,1705,4 = cape of elemental powers lvl 4 -> |cffff00ffequip : Most spell effects increased by 40%.Most spell cooldowns decreased by 30%.Spell castime reduced by 20%. 50% chance to loose agro in group combat.
+
+GENERAL
+13643,9632 = Eteral Horadric Cube -> |cffff00ffUse : Upgrade item if possible by adding or replacing a weaker enchantment on it. Item must be armor or weapon and located in first backpack slot. Spell fails if would downgrade item. Lasts 48 hours. (ignore the other spell on this item)
+3507,983 = The Q -> |cffff00ffUse : Sudenly you remember your childhood quantum phisics lessons about anti matter and multi dimensions. Somehow it all connects how to rip 5% health from a target current state. Sadly it cannot completly destroy target. Target needs to be attackable. (ignore the other spell on this item)
+16181, 9632 = blessed etheral horadric cube -> |cffff00ffUse : The gods gave their blessing on this version to know what you need. Chance is highly increased to get a better enchantment for you. Lasts 48 hours.
+35518,1096,36758 = Omnigel ->    |cffff00ffUse : Lazy to chase some fancy mob to get some rusty item? This morphes an item located in your first backpack slot. An item can be morphed a limited time(=full upgrade). Item type will not change!(ignore the other spell on this item)
+35522,1096,36766 = Real pro man ->    |cffff00ffUse : Some are born leet, others use this. Gives you 10 talent points. You should spend these before logout and you loose them on retalent!(ignore the other spell on this item)
+18153,30534 = Ring of 5k HP -> It's never enough
+18155,30534 = Ring of 5k Mana -> It's never enough
+
+FOR FUN ONLY
+.char additem 13642,9632 = Horadric Cube -> |cffff00ffUse : Add or replace a random enchantment in random slot on item. Item must be armor or weapon and located in first backpack slot. Lasts 30 minutes. (ignore the other spell on this item)
+.char additem 24228,634 = Disco Ball -> |cffff00ffUse : Nobody can resist a 70s disco ball.Add water to instant disco dance floor for your budys. They can crash the party anytime though.(ignore the other spell on this item)
+.char additem 24229,634 = Nuclear waste -> |cffff00ffUse : Didn't your mother tell you not to eat any garbage ? This stuff could turn you into anything. Lasts 30 minutes. (ignore the other spell on this item)
+.char additem 22765,811 = Mule Dope -> |cffff00ffUse : No wonder that you go out of control with one of these. Makes time fly while you travel. 200% faster. Lasts 1 minutes. (ignore the other spell on this item)
+.char additem 29188,40397 = Pimp my ride ->  |cffff00ffUse : Tired of old mount? Rusty old animal is not sexy anymore? Spent all your money on baby milk and can\'t afford a new one ? Don\'t worry, we know how much it sucks to be you.Here is a slow but cool one with spells
+.char additem 23227,811 = Pet shop boys ->  |cffff00ffFun : Pet luv. Life wouldn't be fair without this. Buy some new look for your pet. He deservers it. 30 min duration.
+.char additem 34103,811 = Mirror world ->  |cffff00ffPVP: Now you see me, now you don't. Please don't use it on women drivers. (Makes target swap orintation.)
+.char additem 34104,811 = Bad Day ->  |cffff00ffTanking : Start the day with left foot. Then hit your boss in the nuts with it. You draw agro like no tomorrow. (Twice as much. 10 sec duration.)
+.char additem 1356,924 = Blessed Dumbness ->  |cffff00ffDPS : Look whoose the dumb now ? If your target is not atacking you then he will half way forget about you. (Threat is reduced to half)
+.char additem 2638,924 = Geekness proof ->  |cffff00ffbuf : Others laughed at you in school but it's time for revenge. Finally you can show the world and have that evil laugh from cartoons. (Basic scroll buffs all in 1)
+.char additem 27419,1013 = Tag, you're it ->  |cffff00ffRaid : A lifesaving game. Switch your healthpoints with one of your party members. Selection is auto. Member must be in range and have full health.(ignore the other spell on this item)
+.char additem 951,1093 = Blue coffe ->  |cffff00ffbuf : Forget potions. Coffe is way better. Can get your whatever powers back in notime.(recover 10% max mana/energy/rage)(ignore the other spell on this item)
+.char additem 3512,1096 = Beam me Scotty ->  |cffff00ffRaid : This is not star wars but walking is so yesterday. If both selected party member and you are out of combat then you can port to a tanker warrior or paladin location from party.Works only on same map.(ignore the other spell on this item)
+.char additem 27421,992,36759 = Server Colonizer ->   |cffff00ffbuff : Tired to level your char on this realm too though this one is much better then the other one?. Want to continue where you left off ?. 1 cast = 1 levelup. (ignore the other spell on this item)
+.char additem 35517,1096,36760 = Mr fix it ->    |cffff00ffbuff : That bear punch really hit the spot on your armor. Why go back and ask someone to do it if you could do it as well on the fields? You can fix anything with Super Glue these days.(requires normal money as other repair) (ignore the other spell on this item)
+.char additem 35519,1096,36761 = Second Hand Omnigel -> |cffff00ffUse : Laserswords and 3d printers are to be found in archeological sites. This morphes an item located in your first backpack slot. An item can be morphed a limited time.This version can morph only white and green items.(ignore the other spell on this item)
+.char additem 836,1007,36762 = Onion flawored nuclear fart -> |cffff00ffCombat : Could make a mammoth to bork. Sniff this and start fainting.(2 min cooldown)(ignore the other spell on this item)
+.char additem 1450,1026,36763 = Fat rich junk food -> |cffff00ffRaid : Will make even your grandchildren fat. But you still like to eat it cause it satifies your momentary needs.(MaxHP increase, it stacks up)(ignore the other spell on this item)
+.char additem 35521,1096,36765 = Healbot -> |cffff00ffRaid : No funny messages :P. Should give a hand for tanks in raids. Nothing can replace a human player though.(ignore the other spell on this item)
+.char additem 35520,1096,36764 = Universal Translator -> |cffff00ffBuff : Though you might have not been able to learn cross faction talk in those 4 years of wow. This buff instnatly makes you understand other languages.(ignore the other spell on this item)
+
+STARTUP GEAR
+.char additem 22805,35247 = free startup gear 
+.char additem 23741,35247 = free startup gear 
+.char additem 23743,35247 = free startup gear 
+.char additem 13338,21513 = free startup gear 
+
+//to get new ones
+select * from custom_item_lookup where 
+(inventorySlotID = 0 or inventorySlotID = 99) and 
+item_id not in (89,138,2248,17,93,6142,133,5090,101,105,123,134,876,1957,1961,1984,5222,5226,4033,3002,1350,1544,1403,1622
+,18438,12751,28648,12750,996,5828,6673,6698,2588,5378,16141,16159,13642,24228,24229,1078,22805,23741,23743,13338,22765,29188
+,23227,34103,34104,1356,2638,16181,27419,951,3512,35518,27421,35517,35519,836,1450,35520,35521,35522)
+#and icon_name like "%swo%"
+order by is_animated,display_id,icon_name desc
+
+//list of non used spells
+30798
+
+select id,name,description from dbc_spell where name like "Rockbiter Weapon" and id>36766
+
+#.char additem 31265
+#shield
+replace INTO items (`entry`,`class`,`subclass`,`field4`,`name1`,`name2`,`name3`,`name4`,`displayid`,`quality`,`flags`,`buyprice`,`sellprice`,`inventorytype`,`allowableclass`,`allowablerace`,`itemlevel`,`requiredlevel`,`RequiredSkill`,`RequiredSkillRank`,`RequiredPlayerRank1`,`RequiredPlayerRank2`,`RequiredFaction`,`RequiredFactionStanding`,`Unique`,`maxcount`,`ContainerSlots`,`stat_type1`,`stat_value1`,`stat_type2`,`stat_value2`,`stat_type3`,`stat_value3`,`stat_type4`,`stat_value4`,`stat_type5`,`stat_value5`,`stat_type6`,`stat_value6`,`stat_type7`,`stat_value7`,`stat_type8`,`stat_value8`,`stat_type9`,`stat_value9`,`stat_type10`,`stat_value10`,`dmg_min1`,`dmg_max1`,`dmg_type1`,`dmg_min2`,`dmg_max2`,`dmg_type2`,`dmg_min3`,`dmg_max3`,`dmg_type3`,`dmg_min4`,`dmg_max4`,`dmg_type4`,`dmg_min5`,`dmg_max5`,`dmg_type5`,`armor`,`holy_res`,`fire_res`,`nature_res`,`frost_res`,`shadow_res`,`arcane_res`,`delay`,`ammo_type`,`range`,`spellid_1`,`spelltrigger_1`,`spellcharges_1`,`spellcooldown_1`,`spellcategory_1`,`spellcategorycooldown_1`,`spellid_2`,`spelltrigger_2`,`spellcharges_2`,`spellcooldown_2`,`spellcategory_2`,`spellcategorycooldown_2`,`spellid_3`,`spelltrigger_3`,`spellcharges_3`,`spellcooldown_3`,`spellcategory_3`,`spellcategorycooldown_3`,`spellid_4`,`spelltrigger_4`,`spellcharges_4`,`spellcooldown_4`,`spellcategory_4`,`spellcategorycooldown_4`,`spellid_5`,`spelltrigger_5`,`spellcharges_5`,`spellcooldown_5`,`spellcategory_5`,`spellcategorycooldown_5`,`bonding`,`description`,`page_id`,`page_language`,`page_material`,`quest_id`,`lock_id`,`lock_material`,`sheathID`,`randomprop`,`unk203_1`,`block`,`itemset`,`MaxDurability`,`ZoneNameID`,`mapid`,`bagfamily`,`TotemCategory`,`socket_color_1`,`unk201_3`,`socket_color_2`,`unk201_5`,`socket_color_3`,`unk201_7`,`socket_bonus`,`GemProperties`,`ReqDisenchantSkill`,`unk2`) VALUES ('31265','4','6','-1','|cffff00ffFrost knight defense ensurace','','','','43760','5','0','10000000','10000000','14','-1','-1','200','0','0','0','0','0','0','0','0','1','0','12','44','15','50','4','70','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','7416','0','0','0','0','0','0','1500','0','0','62000','1','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','1','The air around wearer rapidly charges up with frost magic. Smallest actions might release a chain reaction.','0','0','0','0','0','0','4','0','0','215','0','30000','0','','0','','2','0','4','0','8','0','1067','','-1','0');
+#.char additem 29819
+#sword
+replace INTO items (`entry`,`class`,`subclass`,`field4`,`name1`,`name2`,`name3`,`name4`,`displayid`,`quality`,`flags`,`buyprice`,`sellprice`,`inventorytype`,`allowableclass`,`allowablerace`,`itemlevel`,`requiredlevel`,`RequiredSkill`,`RequiredSkillRank`,`RequiredPlayerRank1`,`RequiredPlayerRank2`,`RequiredFaction`,`RequiredFactionStanding`,`Unique`,`maxcount`,`ContainerSlots`,`stat_type1`,`stat_value1`,`stat_type2`,`stat_value2`,`stat_type3`,`stat_value3`,`stat_type4`,`stat_value4`,`stat_type5`,`stat_value5`,`stat_type6`,`stat_value6`,`stat_type7`,`stat_value7`,`stat_type8`,`stat_value8`,`stat_type9`,`stat_value9`,`stat_type10`,`stat_value10`,`dmg_min1`,`dmg_max1`,`dmg_type1`,`dmg_min2`,`dmg_max2`,`dmg_type2`,`dmg_min3`,`dmg_max3`,`dmg_type3`,`dmg_min4`,`dmg_max4`,`dmg_type4`,`dmg_min5`,`dmg_max5`,`dmg_type5`,`armor`,`holy_res`,`fire_res`,`nature_res`,`frost_res`,`shadow_res`,`arcane_res`,`delay`,`ammo_type`,`range`,`spellid_1`,`spelltrigger_1`,`spellcharges_1`,`spellcooldown_1`,`spellcategory_1`,`spellcategorycooldown_1`,`spellid_2`,`spelltrigger_2`,`spellcharges_2`,`spellcooldown_2`,`spellcategory_2`,`spellcategorycooldown_2`,`spellid_3`,`spelltrigger_3`,`spellcharges_3`,`spellcooldown_3`,`spellcategory_3`,`spellcategorycooldown_3`,`spellid_4`,`spelltrigger_4`,`spellcharges_4`,`spellcooldown_4`,`spellcategory_4`,`spellcategorycooldown_4`,`spellid_5`,`spelltrigger_5`,`spellcharges_5`,`spellcooldown_5`,`spellcategory_5`,`spellcategorycooldown_5`,`bonding`,`description`,`page_id`,`page_language`,`page_material`,`quest_id`,`lock_id`,`lock_material`,`sheathID`,`randomprop`,`unk203_1`,`block`,`itemset`,`MaxDurability`,`ZoneNameID`,`mapid`,`bagfamily`,`TotemCategory`,`socket_color_1`,`unk201_3`,`socket_color_2`,`unk201_5`,`socket_color_3`,`unk201_7`,`socket_bonus`,`GemProperties`,`ReqDisenchantSkill`,`unk2`) VALUES ('29819','2','7','-1','|cffff00ffBonechiller','','','','41464','5','0','10000000','10000000','13','-1','-1','200','0','0','0','0','0','0','0','0','1','0','19','51','28','23','31','65','0','0','0','0','0','0','0','0','0','0','0','0','0','0','183','266','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','1700','0','0','62010','1','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','1','As the iceshards penetrate the target he\'s will of life will leave him for a short while making him much slower in any agresive way.','0','0','0','0','0','0','3','0','0','0','0','30000','0','','0','','2','0','4','0','8','0','1627','','-1','0');
+#staff
+#.char additem 32448
+replace INTO items (`entry`,`class`,`subclass`,`field4`,`name1`,`name2`,`name3`,`name4`,`displayid`,`quality`,`flags`,`buyprice`,`sellprice`,`inventorytype`,`allowableclass`,`allowablerace`,`itemlevel`,`requiredlevel`,`RequiredSkill`,`RequiredSkillRank`,`RequiredPlayerRank1`,`RequiredPlayerRank2`,`RequiredFaction`,`RequiredFactionStanding`,`Unique`,`maxcount`,`ContainerSlots`,`stat_type1`,`stat_value1`,`stat_type2`,`stat_value2`,`stat_type3`,`stat_value3`,`stat_type4`,`stat_value4`,`stat_type5`,`stat_value5`,`stat_type6`,`stat_value6`,`stat_type7`,`stat_value7`,`stat_type8`,`stat_value8`,`stat_type9`,`stat_value9`,`stat_type10`,`stat_value10`,`dmg_min1`,`dmg_max1`,`dmg_type1`,`dmg_min2`,`dmg_max2`,`dmg_type2`,`dmg_min3`,`dmg_max3`,`dmg_type3`,`dmg_min4`,`dmg_max4`,`dmg_type4`,`dmg_min5`,`dmg_max5`,`dmg_type5`,`armor`,`holy_res`,`fire_res`,`nature_res`,`frost_res`,`shadow_res`,`arcane_res`,`delay`,`ammo_type`,`range`,`spellid_1`,`spelltrigger_1`,`spellcharges_1`,`spellcooldown_1`,`spellcategory_1`,`spellcategorycooldown_1`,`spellid_2`,`spelltrigger_2`,`spellcharges_2`,`spellcooldown_2`,`spellcategory_2`,`spellcategorycooldown_2`,`spellid_3`,`spelltrigger_3`,`spellcharges_3`,`spellcooldown_3`,`spellcategory_3`,`spellcategorycooldown_3`,`spellid_4`,`spelltrigger_4`,`spellcharges_4`,`spellcooldown_4`,`spellcategory_4`,`spellcategorycooldown_4`,`spellid_5`,`spelltrigger_5`,`spellcharges_5`,`spellcooldown_5`,`spellcategory_5`,`spellcategorycooldown_5`,`bonding`,`description`,`page_id`,`page_language`,`page_material`,`quest_id`,`lock_id`,`lock_material`,`sheathID`,`randomprop`,`unk203_1`,`block`,`itemset`,`MaxDurability`,`ZoneNameID`,`mapid`,`bagfamily`,`TotemCategory`,`socket_color_1`,`unk201_3`,`socket_color_2`,`unk201_5`,`socket_color_3`,`unk201_7`,`socket_bonus`,`GemProperties`,`ReqDisenchantSkill`,`unk2`) VALUES ('32448','2','10','-1','|cffff00ffThe Imba caster','','','','44855','5','0','10000000','10000000','17','-1','-1','200','0','0','0','0','0','0','0','0','1','0','21','89','30','35','5','234','0','0','0','0','0','0','0','0','0','0','0','0','0','0','130','377','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','3100','0','0','35844','1','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','1','Stay from the enemy and strike hard.','0','0','0','0','0','0','2','0','0','0','0','30000','0','','0','','2','0','4','0','8','0','1142','','-1','0');
+
+/////workshop
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+warrior
+block 215
+armor 7416
+40 defense rating
+chance on struck to cast a frost nova : 27088
+The air around wearer rapidly charges up with frost magic. Smallest actions might release a chain reaction.
+
+rogues
+.char additem 29819 - sword
+.char additem 20417
+As the iceshards penetrate the target he's will of life will leave him for a short while making him much slower in any agresive way.
+chance on hit to reduce attacker 
+		castspeed  = SPELL_AURA_MOD_CASTING_SPEED = 65, -> 100
+		,attackspeed = SPELL_AURA_MOD_ATTACKSPEED = 9, -> 100
+//		,movement = SPELL_AURA_MOD_DECREASE_SPEED = 33, -> 50
+		, triger spell -> 31257
+chance on hit chilled
+
+4242		Pester   			Decreases damage done while granting a chance to silence on hit.
+12787   	Thrash   			Adds a chance to do two additional attacks. 
+43822   	Charm of the Raging Defender   	Melee attacks against you have a $h% chance to grant you $43823s1% damage reduction against the next melee attack that hits you. 
+
+SHAMAN
+.char additem 29444
+.char additem 28739
+21969   	Mark of the Chosen   	Has a 2% chance when struck in combat of increasing all stats by 25 for $21970d1. 
+23686   	Lightning Strike   	Chance to strike your melee target with lightning for $23687s1 Nature damage. 
+27419   	Warrior's Resolve   	Chance on melee attack to heal you for $27418s1. 
+
+PALADIN
+.char additem 34589 - sunwell 2
+block 207
+armor 7216
+45 ciritcal rating
+thorns 43420
+replace INTO items (`entry`,`class`,`subclass`,`field4`,`name1`,`name2`,`name3`,`name4`,`displayid`,`quality`,`flags`,`buyprice`,`sellprice`,`inventorytype`,`allowableclass`,`allowablerace`,`itemlevel`,`requiredlevel`,`RequiredSkill`,`RequiredSkillRank`,`RequiredPlayerRank1`,`RequiredPlayerRank2`,`RequiredFaction`,`RequiredFactionStanding`,`Unique`,`maxcount`,`ContainerSlots`,`stat_type1`,`stat_value1`,`stat_type2`,`stat_value2`,`stat_type3`,`stat_value3`,`stat_type4`,`stat_value4`,`stat_type5`,`stat_value5`,`stat_type6`,`stat_value6`,`stat_type7`,`stat_value7`,`stat_type8`,`stat_value8`,`stat_type9`,`stat_value9`,`stat_type10`,`stat_value10`,`dmg_min1`,`dmg_max1`,`dmg_type1`,`dmg_min2`,`dmg_max2`,`dmg_type2`,`dmg_min3`,`dmg_max3`,`dmg_type3`,`dmg_min4`,`dmg_max4`,`dmg_type4`,`dmg_min5`,`dmg_max5`,`dmg_type5`,`armor`,`holy_res`,`fire_res`,`nature_res`,`frost_res`,`shadow_res`,`arcane_res`,`delay`,`ammo_type`,`range`,`spellid_1`,`spelltrigger_1`,`spellcharges_1`,`spellcooldown_1`,`spellcategory_1`,`spellcategorycooldown_1`,`spellid_2`,`spelltrigger_2`,`spellcharges_2`,`spellcooldown_2`,`spellcategory_2`,`spellcategorycooldown_2`,`spellid_3`,`spelltrigger_3`,`spellcharges_3`,`spellcooldown_3`,`spellcategory_3`,`spellcategorycooldown_3`,`spellid_4`,`spelltrigger_4`,`spellcharges_4`,`spellcooldown_4`,`spellcategory_4`,`spellcategorycooldown_4`,`spellid_5`,`spelltrigger_5`,`spellcharges_5`,`spellcooldown_5`,`spellcategory_5`,`spellcategorycooldown_5`,`bonding`,`description`,`page_id`,`page_language`,`page_material`,`quest_id`,`lock_id`,`lock_material`,`sheathID`,`randomprop`,`unk203_1`,`block`,`itemset`,`MaxDurability`,`ZoneNameID`,`mapid`,`bagfamily`,`TotemCategory`,`socket_color_1`,`unk201_3`,`socket_color_2`,`unk201_5`,`socket_color_3`,`unk201_7`,`socket_bonus`,`GemProperties`,`ReqDisenchantSkill`,`unk2`) VALUES ('34589','4','6','-1','|cffff00ffSunscale furry','','','','47921','1','0','10000000','10000000','14','-1','-1','200','0','0','0','0','0','0','0','0','1','0','32','45','25','20','7','70','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','7209','0','0','0','0','0','0','1500','0','0','43420','0','0','120000','0','0','','0','0','0','0','0','','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','1','','0','0','0','0','0','0','4','0','0','207','0','30000','0','','0','','2','0','4','0','8','0','1067','','-1','0')
+
+WARLOCK
+.char additem 29444
+7098		Curse of Mending   	Curses an enemy for $d., giving it $h% chance to heal its target by $7099s1 on attack.
+27780   	Corrupted Fear   	When struck in combat has a chance of causing the attacker to flee in terror for 2 seconds. 
+38319   	Forgotten Knowledge   	Your harmful spells have a chance to increase your spell haste rating by 280 for 6 secs. 
+
+DRUID
+.char additem 29748
+.char additem 34878
+.char additem 33798
+6909		Curse of Thorns   	Curses an enemy for $d., giving it $h% chance to take $6910s1 damage on attack. 
+27774   	The Furious Storm   	Chance on spell cast to increase your damage and healing by up to $27775s1 for $27775d. 
+4070		Guardian   		Have a 2% chance when struck in combat of increasing armor by $10342s1 for $10342d1. 
+
+HUNTER
+.char additem 28365
+40485   	Hunter Tier 6 Trinket   Your Steady Shot has a $h% chance to grant you $40487s1 attack power for $40487d. 
+27785   	Hunter Armor Energize   Your normal ranged attacks have a 4% chance of restoring 200 mana. 
+27867   	Freeze   		When struck in combat has a chance of freezing the attacker in place for $27868d. 
+
+PRIEST
+.char additem 29430
+.char additem 28738
+.char additem 33983
+.char additem 32185
+35844   	Increase Spell Dam 959  Increases damage and healing done by magical spells and effects by up to $s1. 
+27997   	Spellsurge Trigger   	15% chance on successful spellcast of restoring 100 mana over 10 seconds to the party. 
+27561   	Silence Trigger   	When struck by a harmful spell, the caster of that spell has a $h% chance to be silenced for $27559d. 
+
+MAGE
+imba caster -> add the 1k spell bonus
+.char additem 20719
+.char additem 32873
+8612		Phase Shift   		Adds a chance to turn invisible when hit. 
+26128   	Enigma Resist Bonus   	Grants +$26129s1% increased spell hit chance for $26129d when one of your spells is resisted. 
+40482   	Mage Tier 6 Trinket   	Your spell critical strikes have a 50% chance to grant you $40483s1 spell haste rating for $40483d. 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
