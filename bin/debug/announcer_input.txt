@@ -1,0 +1,26 @@
+//the range where players would hear the announcement
+ANNOUNCE_RANGE=10000
+//note that messages can be top 500 chars long
+
+//the message
+MSGSTRUCT_MSG=pvp score
+//broadcast is 0, monster yell is 1, announce in midle of screen 2, in chat like wisper 3
+MSGSTRUCT_TYPE=5
+//in case it is not broadcast then you probably want to use common lang here
+MSGSTRUCT_LANG=0
+//-1 means all maps
+MSGSTRUCT_MAPID=-1
+//all classes
+MSGSTRUCT_CHARCLASS=-1
+//all races
+MSGSTRUCT_CHARRACE=-1
+//this is needed to notify dll that we have a complete block. Every announce block needs to have this
+MSGSTRUCT_ENDSTRUCT=1
+
+MSGSTRUCT_MSG=3v3
+MSGSTRUCT_TYPE=6
+MSGSTRUCT_ENDSTRUCT=1
+
+MSGSTRUCT_MSG=5v5
+MSGSTRUCT_TYPE=7
+MSGSTRUCT_ENDSTRUCT=1
